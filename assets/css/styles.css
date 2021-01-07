@@ -5,40 +5,54 @@ body {
 }
 
 .moto-gallery-header {
-  font-size : 1.5rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
 .moto-gallery-desc {
-  font-size : 1rem;
+  font-size: 1rem;
 }
 
 .font-5 {
   font-size: 1.6vw !important;
 }
+
 h1 {
   font-size: 2.2vw !important;
   font-weight: bold;
-
 }
 
+.app1 {
+  text-align: justify;
+  text-justify: inter-word;
+}
 
 @media (max-width: 544px) {
-    .app1{font-size: 0.7rem !important;}
+  .app1 {
+    font-size: 0.7rem !important;
+  }
 }
 
 @media (max-width: 767px) and (min-width: 545px) {
-    .app1{font-size: 0.8rem !important;}
+  .app1 {
+    font-size: 0.8rem !important;
+  }
 }
 
 @media (max-width: 992px) and (min-width: 768px) {
-    .app1{font-size: 1rem !important;}
+  .app1 {
+    font-size: 1rem !important;
+  }
 }
 
 @media (max-width: 1200px) and (min-width: 993px) {
-    .app1{font-size: 1.1rem !important;}
+  .app1 {
+    font-size: 1.1rem !important;
+  }
 }
 
 @media (min-width: 1201px) {
-    .app1{font-size: 1.3rem !important;}
+  .app1 {
+    font-size: 1.3rem !important;
+  }
 }

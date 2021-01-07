@@ -1,0 +1,6 @@
+1. Poprawić marginesy i paddingi w zaleznosci od rozdzielczosci ekranu
+2. poprawic wielkosc fontu, w zaleznosci od rozdzielczosci ekranu
+3. Zastanowić się jak rozwiązać problem z rozdzielczością na nowych smartphonach, np p40pro ?
+4. czy zmieniać rozmiar ikony per rozdzielczosc ?
+
+Wielkość fontu dla popularnych desktopów powinna być odpowiednia takie jak : standardowy tablet, 15 calowy laptop, 24 cal monitor
