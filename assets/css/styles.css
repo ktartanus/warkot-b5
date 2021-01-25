@@ -4,6 +4,10 @@ body {
   font-weight: bold;
 }
 
+nav a:hover, .link-grey {
+  color: #808080 !important;
+}
+
 .moto-gallery-header {
   font-size: 1.5rem;
   font-weight: bold;
@@ -28,62 +32,72 @@ h1 {
 }
 
 @media (max-width: 544px) {
-  .app1 {
-    font-size: 0.7rem !important;
+  .page_warkot_font {
+    font-size: 2.1vw !important;
+  }
+
+  .page_offer_font {
+    font-size: 2.1vw !important;
+  }
+
+  .page_aboutUs_font {
+    font-size: 2.1vw !important;
   }
 }
 
 @media (max-width: 767px) and (min-width: 545px) {
-  .app1 {
-    font-size: 0.8rem !important;
+  .page_warkot_font {
+    font-size: 1.9vw !important;
+  }
+
+  .page_offer_font {
+    font-size: 1.8vw !important;
+  }
+
+  .page_aboutUs_font {
+    font-size: 1.8vw !important;
   }
 }
 
 @media (max-width: 992px) and (min-width: 768px) {
   .page_warkot_font {
-    font-size: 1.6vw !important;
+    font-size: 1.2vw !important;
   }
 
   .page_offer_font {
-    /* font-size: 1.9rem !important; */
-    font-size: 1.6vw !important;
+    font-size: 1.1vw !important;
   }
 
   .page_aboutUs_font {
-    /* font-size: 1.9rem !important; */
-    font-size: 1.3vw !important;
+    font-size: 1.05vw !important;
   }
 }
 
 @media (max-width: 1200px) and (min-width: 993px) {
   .page_warkot_font {
-    /* font-size: 1.9rem !important; */
-    font-size: 1.6vw !important;
+    font-size: 1.2vw !important;
   }
 
   .page_offer_font {
-    font-size: 1.7vw !important;
+    font-size: 1.1vw !important;
   }
 
 
   .page_aboutUs_font {
-    /* font-size: 1.9rem !important; */
-    font-size: 1.3vw !important;
+    font-size: 1.05vw !important;
   }
 }
 
 @media (min-width: 1201px) {
   .page_warkot_font {
-    font-size: 1.6vw !important;
+    font-size: 1.0vw !important;
   }
 
   .page_offer_font {
-    /* font-size: 1.9rem !important; */
-    font-size: 1.7vw !important;
+    font-size: 1.1vw !important;
   }
 
   .page_aboutUs_font {
-    /* font-size: 1.9rem !important; */
-    font-size: 1.3vw !important;
+    font-size: 0.91vw !important;
   }
 }
