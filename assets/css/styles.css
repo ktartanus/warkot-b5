@@ -1,7 +1,7 @@
 body {
   font-size: 1.3rem !important;
   font-family: 'Barlow Condensed', 'Arial', sans-serif;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 nav a:hover, .link-grey {
@@ -26,9 +26,19 @@ h1 {
   font-weight: bold;
 }
 
+/* nnew */
+h2 {
+  font-size: 1.6vw !important;
+  font-weight: bold;
+}
+
 .warkot_page_font, .t-justify {
   text-align: justify;
   text-justify: inter-word;
+}
+
+.modal-dialog {
+  max-width: 80% !important;
 }
 
 @media (max-width: 544px) {
