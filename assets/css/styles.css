@@ -16,19 +16,26 @@ nav a:hover, .link-grey {
 .moto-gallery-desc {
   font-size: 1rem;
 }
-
-.font-5 {
-  font-size: 1.6vw !important;
-}
-
+/*
 h1 {
   font-size: 2.2vw !important;
+  font-weight: bold;
+} */
+
+
+h1 {
+  font-size: 1.5rem !important;
   font-weight: bold;
 }
 
 /* nnew */
-h2 {
+/* h2 {
   font-size: 1.6vw !important;
+  font-weight: bold;
+} */
+
+h2 {
+  font-size: 1.4rem !important;
   font-weight: bold;
 }
 
