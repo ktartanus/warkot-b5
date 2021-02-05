@@ -41,7 +41,7 @@ h2 {
   font-weight: bold;
 }
 
-.warkot_page_font, .t-justify {
+p, .justify-t{
   text-align: justify;
   text-justify: inter-word;
 }
@@ -50,6 +50,14 @@ h2 {
   max-width: 80% !important;
 }
 
+#navbarSupportedContent {
+  font-size: larger;
+  font-weight: bold;
+}
+
+#address-ico:hover {
+  color: #3B5998;
+}
 @media (max-width: 544px) {
   .page_warkot_font {
     font-size: 2.1vw !important;
