@@ -126,30 +126,43 @@ p, .justify-t{
 
 @media (max-width: 1200px) and (min-width: 993px) {
   .page_warkot_font {
-    font-size: 1.2vw !important;
+    font-size: 0.95rem !important;
   }
 
   .page_offer_font {
-    font-size: 1.1vw !important;
+    font-size: 0.82rem !important;
   }
 
-
   .page_aboutUs_font {
-    font-size: 1.05vw !important;
+    font-size: 0.85rem !important;
   }
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 1201px) and (max-width: 1400px)  {
   .page_warkot_font {
-    font-size: 1.0vw !important;
+    font-size: 1.0rem !important;
   }
 
   .page_offer_font {
-    font-size: 0.9vw !important;
+    font-size: 0.92rem !important;
   }
 
   .page_aboutUs_font {
-    font-size: 1.0vw !important;
+    font-size: 0.98rem !important;
+  }
+}
+
+@media (min-width: 1401px) {
+  .page_warkot_font {
+    font-size: 1.25rem !important;
+  }
+
+  .page_offer_font {
+    font-size: 1.1rem !important;
+  }
+
+  .page_aboutUs_font {
+    font-size: 1.15rem !important;
   }
 }
 
