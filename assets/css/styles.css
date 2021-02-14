@@ -108,15 +108,15 @@ p, .justify-t{
 
 @media (max-width: 992px) and (min-width: 768px) {
   .page_warkot_font {
-    font-size: 1.2vw !important;
+    font-size: 1.6vw !important;
   }
 
   .page_offer_font {
-    font-size: 1.1vw !important;
+    font-size: 1.25vw !important;
   }
 
   .page_aboutUs_font {
-    font-size: 1.05vw !important;
+    font-size: 1.35vw !important;
   }
 
   #motorcycle-scratch-div {

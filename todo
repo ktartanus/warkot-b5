@@ -1,5 +1,4 @@
-do poprawy na iphone i mobilkach - DONE
-
+ i mobilkach - DONE
 galeria z przyciskami, byc moze slidery
 główne menu, font-size: larger,   font-weight: bold; DONE
 wszystko wyjustowane - DONE
@@ -7,21 +6,15 @@ marginesy na warkot.html na rowno z obrazkiem - DONE
 marginesy na oferta.html na rowno z obrazkiem - DONE
 usuwać wszystkie buzki - DONE
 wyśrodkować wertykalnie prawy tekst na ekranie oferta.html - DONE
-
-
 o co chodzi z domenami dopytać o domene i hosting - DONE
 
 wymyślić i uzupełnić znacznik <tittle> na stronach i podstronach
-
-drukowanymi opisy w sekcji motocykle
-
-wyłaczyć wyświetlanie youtube
-
-na tabletach wywalic motorek na kontakcie
+do poprawy na iphone
+zmiana layoutu w oferta.html
 
 
 Moje spostszerzenia ( do poprawki )
-Mobilka ( 363 x 797 )
+Mobilka ( 363 x 797 ) - WSTEPNIE POPRAWIONE
   warkot.html -
     dwa ostatnie obrazki mają lewe paddingi
     tekst musi byc wiekszy
@@ -39,6 +32,27 @@ Mobilka ( 363 x 797 )
     odstępy pomiędzy kontaktami
 
 Tablet pion( 800 x 1280)
+  warkot.html
+    wielkosc fontu
+    byc moze xpaddingi dla tekstu na dole
+
+  bmw.html
+    porpawic autoscrolling w galerii
+
+  triumph.html
+    poprawić padding-bottom na tekscie
+
+  o_nas.html
+    poprawic wielkosc fontu
+
+  oferta.html
+    poprawic wielkosc fontu
+    gorny obrazek bez paddingow a dolny ma paddingi
+    Nagłówek Oferta usunac niepotrzebe wciecie (padding)
+
+    Kontakty.html
+     zmienić lokalizacje w google maps na stary łajszczew
+
 
 Tablet poziom(1280 x 800)
 
