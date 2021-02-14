@@ -61,15 +61,21 @@ p, .justify-t{
 @media (max-width: 544px) {
   .page_warkot_font {
     /* font-size: 2.1vw !important; */
-    padding:15px !important;
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
   }
 
   .page_offer_font {
-    font-size: 2.1vw !important;
+    /* font-size: 2.1vw !important; */
+    /* font-size: 1.8vw !important; */
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
   }
 
   .page_aboutUs_font {
-    font-size: 2.1vw !important;
+    /* font-size: 2.1vw !important; */
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
   }
 
   .center-logo {
@@ -81,15 +87,22 @@ p, .justify-t{
 
 @media (max-width: 767px) and (min-width: 545px) {
   .page_warkot_font {
-    font-size: 1.9vw !important;
+    /* font-size: 1.9vw !important; */
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
   }
 
   .page_offer_font {
-    font-size: 1.8vw !important;
+    /* font-size: 1.8vw !important; */
+    /* font-size: 1.8vw !important; */
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
   }
 
   .page_aboutUs_font {
-    font-size: 1.8vw !important;
+    /* font-size: 1.8vw !important; */
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
   }
 }
 
