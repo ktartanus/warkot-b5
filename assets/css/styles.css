@@ -47,7 +47,7 @@ p, .justify-t{
 }
 
 .modal-dialog {
-  max-width: 80% !important;
+  max-width: 90% !important;
 }
 
 #navbarSupportedContent {
@@ -60,7 +60,8 @@ p, .justify-t{
 }
 @media (max-width: 544px) {
   .page_warkot_font {
-    font-size: 2.1vw !important;
+    /* font-size: 2.1vw !important; */
+    padding:15px !important;
   }
 
   .page_offer_font {
@@ -127,10 +128,19 @@ p, .justify-t{
   }
 
   .page_offer_font {
-    font-size: 1.1vw !important;
+    font-size: 0.9vw !important;
   }
 
   .page_aboutUs_font {
-    font-size: 0.91vw !important;
+    font-size: 1.0vw !important;
   }
+}
+
+.parent-of-left-right-containers {
+display: flex;
+flex-direction: column;
+}
+
+.right-container {
+flex: 1;
 }
