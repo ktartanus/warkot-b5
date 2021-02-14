@@ -105,6 +105,10 @@ p, .justify-t{
   .page_aboutUs_font {
     font-size: 1.05vw !important;
   }
+
+  #motorcycle-scratch-div {
+    display: none;
+  }
 }
 
 @media (max-width: 1200px) and (min-width: 993px) {
