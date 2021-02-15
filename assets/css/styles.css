@@ -172,4 +172,5 @@ p, .justify-t{
 
 .flex-direction {
   flex-direction: row;
+  flex-wrap: wrap;
 }
