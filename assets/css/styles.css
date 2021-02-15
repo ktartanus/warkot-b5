@@ -169,3 +169,7 @@ p, .justify-t{
 .flex-shrink {
   flex-shrink: 0;
 }
+
+.flex-direction {
+  flex-direction: row;
+}
