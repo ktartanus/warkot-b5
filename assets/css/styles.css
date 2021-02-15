@@ -166,11 +166,6 @@ p, .justify-t{
   }
 }
 
-.parent-of-left-right-containers {
-display: flex;
-flex-direction: column;
-}
-
-.right-container {
-flex: 1;
+.flex-shrink {
+  flex-shrink: 0;
 }
