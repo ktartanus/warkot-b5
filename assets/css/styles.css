@@ -174,3 +174,7 @@ p, .justify-t{
   flex-direction: row;
   flex-wrap: wrap;
 }
+
+.flex-row:before, .flex-row:after{
+   display: none !important;
+}
