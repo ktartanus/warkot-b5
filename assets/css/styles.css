@@ -178,3 +178,12 @@ p, .justify-t{
 .flex-row:before, .flex-row:after{
    display: none !important;
 }
+
+@media not all and (min-resolution:.001dpcm) { @media {
+
+    .safari_only {
+
+        height:50%;
+
+    }
+}}
