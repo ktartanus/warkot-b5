@@ -179,7 +179,7 @@ p, .justify-t{
    display: none !important;
 }
 
-@media not all and (min-resolution:.001dpcm) { @media {
+@media not all and (min-resolution:.001dpcm) and (max-width: 767px) { @media {
 
     .safari_only {
 
