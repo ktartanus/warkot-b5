@@ -116,14 +116,8 @@
     function setImgHeight() {
 
       var paddingBetweenImages = $("#index_img_div").css('padding-bottom').split("px")[0];
-      var img1Height = 0;
-      var img2Height = 0;
-      while(img1Height == 0){
         var img1Height = $("#index_img_1").height();
-      }
-      while(img2Height == 0){
         var img2Height = $("#index_img_2").height();
-      }
       var totalHeight = img1Height + img2Height + +paddingBetweenImages;
       $("#index_img_3").height(totalHeight);
     }
