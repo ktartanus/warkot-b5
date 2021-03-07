@@ -88,15 +88,15 @@
     <div class="row align-items-end">
 
       <div class="col-md-5 ps-0 ps-md-2 pe-0 pe-md-1">
-        <img id="offer_img_1" class="img-fluid" src="assets/warkot_offer_maciek.jpg" alt="">
+        <img id="offer_img_1" class="img-fluid imgToCalculate" src="assets/warkot_offer_maciek.jpg" alt="">
       </div>
       <div class="col-md-7 ps-0 ps-md-1 pe-0">
 
         <div id="offer_img_div" class="ps-0 ps-md-1 pe-0 pe-md-2 pb-2 pt-2 pt-md-0">
-          <img id="offer_img_2" class="img-fluid" src="assets/warkot_offer_jeep.jpg" alt="some alt">
+          <img id="offer_img_2" class="img-fluid imgToCalculate" src="assets/warkot_offer_jeep.jpg" alt="some alt">
         </div>
         <div class="ps-0 ps-md-1 pe-0 pe-md-2">
-          <img id="offer_img_3" class="img-fluid" src="assets/warkot_offer_rajdowiec.jpg" alt="some alt">
+          <img id="offer_img_3" class="img-fluid imgToCalculate" src="assets/warkot_offer_rajdowiec.jpg" alt="some alt">
         </div>
       </div>
     </div>
@@ -135,8 +135,27 @@
       var img2Height = $("#offer_img_3").height();
       var totalHeight = img1Height - img2Height - +paddingBetweenImages;
       $("#offer_img_2").height(totalHeight);
-    }
-    setImgHeight();
+    };
+
+    var imageLoaded = 0;
+    $('.imgToCalculate').each(function() {
+      var allImageToLoad = 3;
+      if(this.complete){
+        imageLoaded++;
+        if(imageLoaded == allImageToLoad){
+          setImgHeight();
+          imageLoaded = 0;
+        }
+      }
+        $(this).on('load', function() {
+          imageLoaded++;
+          console.log("image loaded")
+          if(imageLoaded == allImageToLoad){
+            setImgHeight();
+            imageLoaded = 0;
+          }
+        });
+     });
 
     $(window).resize(function() {
       if ($(window).width() >= 768) {

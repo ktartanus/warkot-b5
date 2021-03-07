@@ -88,10 +88,10 @@
 
 
       <div class="col-md-4 ps-0 ps-md-2 pe-0 pe-md-1 pb-2">
-        <img id="about_us_img_1" class="img-fluid" src="assets/warkot_mateusz.jpg" alt="">
+        <img id="about_us_img_1" class="img-fluid imgToCalculate" src="assets/warkot_mateusz.jpg" alt="">
       </div>
       <div class="col-md-8 ps-0 ps-md-1 pe-0 pe-md-2 pb-2">
-        <img id="about_us_img_2" class="img-fluid" src="assets/warkot_maciek.jpg" alt="some alt">
+        <img id="about_us_img_2" class="img-fluid imgToCalculate" src="assets/warkot_maciek.jpg" alt="some alt">
       </div>
       <div class="col ps-0 ps-md-2 pe-0 pe-md-2">
         <img class="img-fluid" src="assets/warkot_bracia2.jpg" alt="some alt">
@@ -131,7 +131,26 @@
         var img1Height = $("#about_us_img_1").height();
         $("#about_us_img_2").height(img1Height);
       }
-      setImgHeight();
+
+      var imageLoaded = 0;
+      $('.imgToCalculate').each(function() {
+        var allImageToLoad = 2;
+        if(this.complete){
+          imageLoaded++;
+          if(imageLoaded == allImageToLoad){
+            setImgHeight();
+            imageLoaded = 0;
+          }
+        }
+          $(this).on('load', function() {
+            imageLoaded++;
+            console.log("image loaded")
+            if(imageLoaded == allImageToLoad){
+              setImgHeight();
+              imageLoaded = 0;
+            }
+          });
+       });
 
       $(window).resize(function() {
         if ($(window).width() >= 768) {
