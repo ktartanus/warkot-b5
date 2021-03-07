@@ -1,6 +1,7 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
 
@@ -27,14 +28,14 @@
           <a href="../index.html"><img id="logo-main" class="center-logo" src="../assets/warkot_logo1.jpg" width="200" alt="warkot logo"></a>
         </div>
 
-      <div class="col text-end header-social-media">
-        <ul class="social-network">
-          <li><a class="text-decoration-none text-reset" href="https://www.instagram.com/vintage.brothers/?hl=pl" title="Instagram"><i class="fa fa-instagram fa-3x header-ico pe-2 pt-3"></i></a></li>
-          <li><a class="text-decoration-none text-reset" href="https://www.facebook.com/Warkot-102858851174810" title="Facebook"><i class="fa fa-facebook-square fa-3x header-ico pe-2 pt-3"></i></a></li>
-        </ul>
+        <div class="col text-end header-social-media">
+          <ul class="social-network">
+            <li><a class="text-decoration-none text-reset" href="https://www.instagram.com/vintage.brothers/?hl=pl" title="Instagram"><i class="fa fa-instagram fa-3x header-ico pe-2 pt-3"></i></a></li>
+            <li><a class="text-decoration-none text-reset" href="https://www.facebook.com/Warkot-102858851174810" title="Facebook"><i class="fa fa-facebook-square fa-3x header-ico pe-2 pt-3"></i></a></li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
   </header>
 
   <nav class="navbar navbar-expand-md navbar-light">
@@ -54,9 +55,9 @@
     </div>
   </nav>
 
-<!-- content -->
-<div class="container my-5">
-  <!-- <div class="row mx-3"> -->
+  <!-- content -->
+  <div class="container my-5">
+    <!-- <div class="row mx-3"> -->
     <div class="row">
 
       <div class="col-md-6 px-0 px-md-2 pb-2">
@@ -87,9 +88,9 @@
 
 
       <div class="col-md-4 ps-0 ps-md-2 pe-0 pe-md-1 pb-2">
-        <img id ="about_us_img_1" class="img-fluid" src="assets/warkot_mateusz.jpg" alt="">
+        <img id="about_us_img_1" class="img-fluid" src="assets/warkot_mateusz.jpg" alt="">
       </div>
-      <div class="col-md-8 ps-0 ps-md-1 pe-0 pe-md-2 pb-2" >
+      <div class="col-md-8 ps-0 ps-md-1 pe-0 pe-md-2 pb-2">
         <img id="about_us_img_2" class="img-fluid" src="assets/warkot_maciek.jpg" alt="some alt">
       </div>
       <div class="col ps-0 ps-md-2 pe-0 pe-md-2">
@@ -100,21 +101,21 @@
   </div>
   <!-- end of content  -->
 
-<footer>
+  <footer>
     <div class="footer">
-  <div class="text-center py-4">
-    ZNAJDZIESZ NAS:
-  </div class="text-center">
+      <div class="text-center py-4">
+        ZNAJDZIESZ NAS:
+      </div class="text-center">
 
-    <ul class="social-network social-circle p-0">
-      <!-- <li><a class="icoYoutube" href="#" title="Youtube"><i class="fa fa-youtube"></i></a></li> -->
-      <li><a class="icoFacebook" href="https://www.facebook.com/Warkot-102858851174810" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-      <li><a class="icoInstagram" href="https://www.instagram.com/vintage.brothers/?hl=pl" title="Instagram"><i class="fa fa-instagram"></i></a></li>
-    </ul>
-    <div id="copyright-note">
-    &copy; Copyright 2020 Kamil Tartanus
-  </div>
-  </div>
+      <ul class="social-network social-circle p-0">
+        <!-- <li><a class="icoYoutube" href="#" title="Youtube"><i class="fa fa-youtube"></i></a></li> -->
+        <li><a class="icoFacebook" href="https://www.facebook.com/Warkot-102858851174810" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+        <li><a class="icoInstagram" href="https://www.instagram.com/vintage.brothers/?hl=pl" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+      </ul>
+      <div id="copyright-note">
+        &copy; Copyright 2020 Kamil Tartanus
+      </div>
+    </div>
   </footer>
 
 
@@ -124,20 +125,23 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
 
   <script>
-    function setImgHeight() {
+    $(function() {
+      function setImgHeight() {
 
-      var img1Height = $("#about_us_img_1").height();
-      $("#about_us_img_2").height(img1Height);
-    }
-    setImgHeight();
-
-    $(window).resize(function() {
-      if ($(window).width() >= 768) {
-        setImgHeight();
-      } else {
-        $("#about_us_img_2").height("auto");
+        var img1Height = $("#about_us_img_1").height();
+        $("#about_us_img_2").height(img1Height);
       }
+      setImgHeight();
+
+      $(window).resize(function() {
+        if ($(window).width() >= 768) {
+          setImgHeight();
+        } else {
+          $("#about_us_img_2").height("auto");
+        }
+      });
     });
   </script>
 </body>
+
 </html>
