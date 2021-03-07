@@ -86,11 +86,11 @@
       </div>
 
 
-      <div class="col-md-4 ps-0 ps-md-2 pe-0 pe-md-1 pb-2 d-flex align-items-stretch">
-        <img class="img-fluid" src="assets/warkot_mateusz.jpg" alt="">
+      <div class="col-md-4 ps-0 ps-md-2 pe-0 pe-md-1 pb-2">
+        <img id ="about_us_img_1" class="img-fluid" src="assets/warkot_mateusz.jpg" alt="">
       </div>
-      <div class="col-md-8 ps-0 ps-md-1 pe-0 pe-md-2 pb-2 d-flex align-items-stretch" >
-        <img class="img-fluid" src="assets/warkot_maciek.jpg" alt="some alt">
+      <div class="col-md-8 ps-0 ps-md-1 pe-0 pe-md-2 pb-2" >
+        <img id="about_us_img_2" class="img-fluid" src="assets/warkot_maciek.jpg" alt="some alt">
       </div>
       <div class="col ps-0 ps-md-2 pe-0 pe-md-2">
         <img class="img-fluid" src="assets/warkot_bracia2.jpg" alt="some alt">
@@ -120,5 +120,24 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
+  <script>
+    function setImgHeight() {
+
+      var img1Height = $("#about_us_img_1").height();
+      $("#about_us_img_2").height(img1Height);
+    }
+    setImgHeight();
+
+    $(window).resize(function() {
+      if ($(window).width() >= 768) {
+        setImgHeight();
+      } else {
+        $("#about_us_img_2").height("auto");
+      }
+    });
+  </script>
 </body>
 </html>
