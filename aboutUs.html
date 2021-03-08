@@ -1,3 +1,4 @@
+c
 <!doctype html>
 
 <html lang="en">
@@ -132,24 +133,26 @@
         $("#about_us_img_2").height(img1Height);
       }
 
-      var imageLoaded = 0;
-      $('.imgToCalculate').each(function() {
-        var allImageToLoad = 2;
-        if(this.complete){
-          imageLoaded++;
-          if(imageLoaded == allImageToLoad){
-            setImgHeight();
-            imageLoaded = 0;
+      if ($(window).width() >= 768) {
+        var imageLoaded = 0;
+        $('.imgToCalculate').each(function() {
+          var allImageToLoad = 2;
+          if (this.complete) {
+            imageLoaded++;
+            if (imageLoaded == allImageToLoad) {
+              setImgHeight();
+              imageLoaded = 0;
+            }
           }
-        }
           $(this).on('load', function() {
             imageLoaded++;
-            if(imageLoaded == allImageToLoad){
+            if (imageLoaded == allImageToLoad) {
               setImgHeight();
               imageLoaded = 0;
             }
           });
-       });
+        });
+      }
 
       $(window).resize(function() {
         if ($(window).width() >= 768) {
