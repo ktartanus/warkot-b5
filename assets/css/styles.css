@@ -28,6 +28,17 @@ h2 {
   font-weight: bold;
 }
 
+h3 {
+  font-size: 1.3rem !important;
+  font-weight: bold;
+}
+
+
+h2 {
+  font-size: 1.4rem !important;
+  font-weight: bold;
+}
+
 p, .justify-t{
   text-align: justify;
   text-justify: inter-word;
@@ -151,4 +162,12 @@ p, .justify-t{
 
 #imgToCalculate {
   height:auto;
+}
+
+#short_opinion {
+  margin-top:10rem;
+}
+
+#full_opinion {
+  display: none;
 }

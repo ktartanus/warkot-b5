@@ -77,6 +77,7 @@
         <div class="justify-t pt-4">
           NASZYM CELEM BYŁO ZBUDOWANIE MOTOCYKLA W STYLU BRAT STYLE,
           W KTÓRYM DOMINOWAĆ BĘDZIE SZCZOTKOWANA, SUROWA STAL.
+          <br/><br/>
           ZADBALIŚMY O KILKA DETALI, KTÓRE WYKONALIŚMY WŁASNORĘCZNIE
           W NASZYM WARSZTACIE, JAK RÓWNIEŻ POPRAWILIŚMY SŁABY PUNKT MOTOCYKLI
           Z LAT 80- HAMULCE. ZOSTAWILIŚMY RÓWNIEŻ WIELE ORYGINALNYCH ELEMENTÓW,
@@ -225,7 +226,57 @@
         </div>
       </div>
     </div>
+  <div class="row mx-md-3">
+    <div class="col-12">
+      <p id="short_opinion" class="text-center fw-bold">
+        „CAŁOŚĆ PRAC TRWAŁA 3 MIESIĄCE, DAŁA UPUST MOIM DESIGNERSKIM ZAPĘDOM I CHŁOPAKI ZDĄŻYLI PRZED DGR. SZTOS!”
+      </p>
+      <div class="text-center pt-5">
+        <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+      </div>
+      <div id="more_btn" class="text-end fw-bold">
+        WIĘCEJ
+      </div>
+      <div id="full_opinion" class="justify-t">
+        <h3>Opinia właściciela</h3>
+        DECYZJA O MODYFIKACJI UTRZYMANEJ W DOBRYM STANIE HONDY, ZBLIŻONEJ DO
+        ORYGINAŁU Z 1981, NIE PRZYSZŁA ŁATWO. POTRZEBOWAŁEM BODŹCA I ODPOWIEDNICH
+        LUDZI. OTWORZENIE SKLEPU INTERNETOWEGO Z ODZIEŻĄ I AKCESORIAMI MOTOCYKLOWYMI
+        W KLIMACIE CUSTOM CULTURE, RODEM Z UK ORAZ POZNANIE EKIPY @VINTAGE.BROTHERS
+        ZAMKNĘŁO ETAP ROZMYŚLAŃ. MACIEK I MATEUSZ SZYBKO ZROZUMIELI MOJĄ WIZJĘ.
+        JUŻ PO PIERWSZYM TELEFONIE MIAŁEM WRAŻENIE, ŻE BĘDZIE DOBRZE. URBAN BRAT
+        STYLE Z WYKORZYSTANIEM MOŻLIWIE DUŻEJ LICZBY ELEMENTÓW ORYGINALNYCH.
+        MIAŁ SIĘ ZMIENIĆ CHARAKTER, ALE TO NADAL MIAŁA BYĆ CB650. ZASTANAWIAŁEM SIĘ
+        JAK BĘDZIE WYGLĄDAĆ WSPÓŁPRACA, JAK CZĘSTO BĘDĘ MUSIAŁ ODWIEDZAĆ WARSZTAT
+        I ILE OSTATECZNIE BĘDZIE MNIE KOSZTOWAĆ MOJE WŁAŚNIE DOJRZEWAJĄCE
+        ZAMIŁOWANIE DO MOTOCYKLI CUSTOM. W KAŻDYM Z TYCH ASPEKTÓW BYŁEM MILE
+        ZASKOCZONY. JASNA, RZECZOWA I SZYBKA WYCENA. CHWILĘ PO OKREŚLENIU BUDŻETU
+        MACIEK PRZYJECHAŁ PO MOTOCYKL. W WARSZTACIE (CHOĆ MIAŁEM NA TO OCHOTĘ)
+        NIE MUSIAŁEM SIĘ POJAWIĆ NAWET RAZ.
+        NA BIEŻĄCO OMAWIALIŚMY POSTĘP PRAC DZIĘKI WYMIANIE ZDJĘĆ, WIADOMOŚCIOM
+        TEKSTOWYM I WYWAŻONEJ LICZBIE ROZMÓW TELEFONICZNYCH. ORGANIZACJA PRACY
+        EKIPY ZE STAREGO ŁAJSZCZEWA DAŁA MI KOMFORT I POZWOLIŁA SKUPIĆ NA DETALACH.
+        CZUŁEM, ŻE MOTOCYKL TRAFIŁ W DOBRE RĘCE, WIĘC NIE MUSIAŁEM SIĘ ZASTANAWIAĆ
+        NAD OGÓŁEM PRAC. CZĘŚCI TAKIE JAK LAMPY, MIGACZE, KANAPA, CZY MANETKI DOPEŁNIAJĄ
+        CAŁOŚĆ I DOBIERALIŚMY JE SKRUPULATNIE. CO CIEKAWE, KIEDY POJAWIAŁ SIĘ TEMAT
+        BEZ NATYCHMIASTOWEJ, ZGODNEJ KONCEPCJI, PARKOWALIŚMY GO NA PARĘ DNI. PRZY
+        KOLEJNEJ ROZMOWIE MIELIŚMY ZGODNE ROZWIĄZANIE. PRZYKŁADEM JEST KOLORYSTYKA
+        ZBIORNIKA PALIWA. CHŁOPAKI ZAPROPONOWALI ZDJĘCIE LAKIERU I BEZBARWNE
+        ZABEZPIECZENIE POWIERZCHNI. POTRZEBOWAŁEM CHWILI, ŻEBY OSWOIĆ SIĘ Z TĄ MYŚLĄ.
+        OSTATECZNIE POSZLIŚMY W TO ROZWIĄZANIE, ALE WPROWADZILIŚMY ZASUGEROWANE PRZEZE
+        MNIE ODCIĘCIE DOLNEJ KRAWĘDZI CZARNYM LAKIEREM. KOLOR WYSZEDŁ ŚWIETNIE, A DZIĘKI
+        CIENIOWI W DOLNEJ CZĘŚCI, ZBIORNIK STAŁ SIĘ WIZUALNIE MNIEJSZY I ZGRABNIEJSZY.
+        CAŁOŚĆ PRAC TRWAŁA 3 MIESIĄCE, DAŁA UPUST MOIM DESIGNERSKIM ZAPĘDOM I CHŁOPAKI
+        ZDĄŻYLI PRZED DGR. SZTOS!
+      </div>
+    </div>
   </div>
+</div>
+
   <!-- end of content  -->
 
   <footer>
@@ -249,6 +300,18 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
   <script src="../assets/script/script.js"></script>
+  <script>
+    let counter = 0;
+    $("#more_btn").on('click', function() {
+      $( "#full_opinion" ).toggle();
+      if(counter % 2 === 0) {
+        $(this).html("MNIEJ");
+      } else {
+        $(this).text("WIĘCEJ");
+      }
+      counter++;
+    });
+  </script>
 </body>
 
 </html>
